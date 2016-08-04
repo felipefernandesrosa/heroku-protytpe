@@ -4,3 +4,26 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 
+.main-page{
+  .thumbnail{
+    .author{
+      >img{
+        float: left;
+      }
+    }
+    .thumb-image{
+      padding-top: 10px;
+    }
+  }
+}
+
+.user-detail-page{
+  .author{
+    width: 100%;
+    float: left;
+    margin: 0px 0 25px 0;
+    >p{
+      font-weight: bold;
+    }
+  }
+}

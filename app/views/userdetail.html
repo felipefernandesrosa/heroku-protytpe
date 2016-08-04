@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron user-detail-page">
   
   <div class="row">
     <div class="col-xs-12">
@@ -10,8 +10,8 @@
       <div class="col-sm-4">
         
         <div class="author">
-          <img src="{{result.team.avatar_url || result.user.avatar_url}}" class="img-circle img-responsive" />
-          <p>{{result.team.name || result.user.name}}</p>
+          <img src="{{result.team.avatar_url || result.user.avatar_url}}" class="img-circle img-responsive pull-left" />
+          <p class="pull-right">{{result.team.name || result.user.name}}</p>
         </div>
         
         <div class="description">
