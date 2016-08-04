@@ -1,11 +1,14 @@
 <div class="jumbotron">
   <h1>'Allo, 'Allo!</h1>
-  <div ng-repeat="result in result">
-    <div class="item {{result.id}}">
-      <img src="{{result.images.normal}}" />
-      <p>{{result.title}}</p>
-      <p>{{result.views_count}}</p>  
+  <div class="row">
+    <div class="col-xs-12 col-sm-4" ng-repeat="result in result">
+      <div class="item {{result.id}}">
+        <a href="#/user/detail/{{result.id}}">
+          <img src="{{result.images.normal}}" class="img-responsive"/>
+          <p>{{result.title}}</p>
+          <p>{{result.views_count}}</p>
+        </a>
+      </div>
     </div>
-    
   </div>
 </div>

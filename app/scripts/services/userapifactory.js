@@ -15,6 +15,9 @@ angular.module('zazcarPrototypeApp')
     return {
       getShots: function () {
         return $http.get("https://api.dribbble.com/v1/shots/?access_token="+token);
+      },
+      getShot: function (id) {
+        return $http.get("https://api.dribbble.com/v1//shots/"+id+"/?access_token="+token);
       }
     };
   });
